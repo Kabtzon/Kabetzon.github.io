@@ -1,0 +1,97 @@
+:root{
+    --violet:#5800FF;
+    --soft_blue_violet:#9C9EFE;
+    --soft_violet:#AFB4FF;
+    --soft_cian:#72FFFF;
+    --gray_green:#395B64;
+    --light_green:#66BFBF;
+    --fuxia_neon:#D82148;
+
+}
+*{
+    margin:0;
+    padding: 0;
+
+}
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--violet);
+}
+.logo{
+    width: 200px;
+    position: absolute;
+    top: 0px;
+    right: 30px;
+}
+h1{
+    margin-top: 200px;
+    color:var(--soft_cian);
+    text-align: center;
+}
+form{
+    width: 400;
+    margin:450;
+    text-align: center;
+}
+form input[type="text"]{
+    background-color: var(--violet);
+    color: var(--light_green);
+    border-style: none;
+    font-size: 1.5em;
+}
+form input[type="text"]::placeholder{
+    color:var(--soft_blue_violet);
+}
+form input[type="text"]:focus{
+    outline: none;
+}
+form input[type="submit"]{
+    font-size: 2em;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style:none;
+    color: var(--light_green)
+}
+form input[type="submit"]:hover{
+    background-color: var(--fuxia_neon);
+    cursor: pointer;
+    color: var(--light_green)
+} 
+.list_container{
+    width: 400px;
+    margin: 0 auto;
+
+}
+.task_container{
+    background-color: var(--soft_violet);
+    display: flex;
+    justify-content: space-between;
+    margin:8px;
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--gray_green)
+}
+.closeBtn{
+    width: 20px;
+    height: 20px;
+
+}
+.closeBtn:hover{
+    cursor:pointer;
+
+}
+#stats{
+    margin-top: 25px;
+    font-size: 1.3em;
+    color: var(--light_green);
+    text-align: center;
+}
+.home{
+    width: 65px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
